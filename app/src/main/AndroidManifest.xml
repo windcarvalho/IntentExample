@@ -16,16 +16,18 @@
             android:name=".ShareActivity"
             android:exported="true"
             android:theme="@style/Theme.IntentExample">
-        <intent-filter>
-            <action android:name="android.intent.action.SEND" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <data android:mimeType="text/plain" />
-        </intent-filter>
-    </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.IntentExample"/>
+            android:theme="@style/Theme.IntentExample" />
         <activity
             android:name=".WelcomeActivity"
             android:exported="true"
@@ -36,6 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InputActivity"
+            android:exported="false"
+            android:label="@string/title_activity_input"
+            android:theme="@style/Theme.IntentExample"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
