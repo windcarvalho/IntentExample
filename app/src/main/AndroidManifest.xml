@@ -32,18 +32,20 @@
             android:name=".WelcomeActivity"
             android:exported="true"
             android:theme="@style/Theme.IntentExample">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".InputActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_input"
             android:theme="@style/Theme.IntentExample"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>

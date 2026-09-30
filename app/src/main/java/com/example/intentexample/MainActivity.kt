@@ -132,7 +132,7 @@ fun MainScreen() {
         Spacer(modifier = Modifier.height(16.dp))
         Button(
             onClick = {
-                // Abrir uma Novela Atividade
+                // Abrir uma Nova Atividade
             },
             colors = ButtonDefaults.buttonColors(
                 containerColor = Color(0xFF000000),
